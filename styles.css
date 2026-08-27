@@ -30,7 +30,7 @@ h1 em { color: var(--accent); font-family: 'Playfair Display', serif; font-weigh
 .photo--tall { margin-top: 120px; }
 .photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: var(--tile); }
 .photo--wide img { aspect-ratio: 1.35 / 1; }
-.photo--full img { height: auto; aspect-ratio: auto; object-fit: contain; }
+.photo--full img { height: auto !important; aspect-ratio: unset !important; object-fit: contain; }
 figcaption { display: flex; justify-content: space-between; padding-top: 13px; color: var(--muted); }
 figcaption span:first-child { color: var(--accent); }
 .photo img:not([src]), .photo img.is-missing { visibility: hidden; }
